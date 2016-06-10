@@ -131,8 +131,8 @@
 
 <div id="help" style="display: none; padding: 2em; background: white; width: 30em; border-radius: 5px;">
     <h2>사용방법</h2>
-    <div>방향키 왼쪽: 5초 전으로</div>
-    <div>방향키 오른쪽: 5초 앞으로</div>
+    <div>방향키 왼쪽: 2초 전으로</div>
+    <div>방향키 오른쪽: 2초 앞으로</div>
     <div>방향키 위: 재생 속도 10% 빠르게</div>
     <div>방향키 아래: 재생 속도 10% 느리게</div>
     <div>Space bar: 비디오 재생/중지</div>
@@ -173,11 +173,11 @@
             if (player0.canPlayType) {
                 playerRew.click(function (e) {
                     e.stopPropagation();
-                    setTime(-5);
+                    setTime(-2);
                 });
                 playerFwd.click(function (e) {
                     e.stopPropagation();
-                    setTime(5);
+                    setTime(2);
                 });
                 playerSlower.click(function (e) {
                     e.stopPropagation();
